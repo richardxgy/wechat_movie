@@ -1,0 +1,11 @@
+/* xiangqing.wxss */
+page{
+  height: 100%;
+  background-image: url(../../image/bj3.jpg);
+}
+
+
+.imgss{
+  height: 300rpx;
+  width: 180rpx;
+}

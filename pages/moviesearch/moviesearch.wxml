@@ -1,0 +1,44 @@
+<!--moviesearch.wxml-->
+
+<input placeholder="请输入电影名称" bindinput="inputEvent" />
+
+<button bindtap="mSearch">搜索</button>
+
+<block wx:for="{{movies}}" wx:for-item="movie">
+
+  <view class="movie" id="{{movie.id}}" bindtap="jumpToDetail">
+    <view class="left">
+      <image src="{{movie.images.medium}}"></image>
+    </view>
+    <view class="right">
+      <view class="movie-name">
+         片名： {{movie.title}}
+      </view>
+     <view class="movie-directors">
+            导演：
+          <block wx:for="{{movie.directors}}" wx:for-item="director">
+              {{director.name}}
+          </block>
+
+      </view>
+       <view class="movie-casts">
+            主演：
+           <block wx:for="{{movie.casts}}" wx:for-item="cast">
+              {{cast.name}}
+          </block>
+      </view>
+       <view class="movie-genres">
+       分类：
+          <block wx:for="{{movie.genres}}" wx:for-item="genre">
+              {{genre}}
+          </block>
+      </view>
+       <view class="movie-year">
+        年份： {{movie.year}}
+      </view>
+
+    </view>
+
+  </view>
+
+</block>

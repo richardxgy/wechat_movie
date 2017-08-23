@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/hotplay/hotplay",
+    "pages/comingsoon/comingsoon",
+    "pages/moviesearch/moviesearch",
+    "pages/xiangqing/xiangqing"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "black",
+    "navigationBarTitleText": "本地热映",
+    "navigationBarTextStyle": "light"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#3E82F7",
+    "list": [
+      {
+        "pagePath": "pages/hotplay/hotplay",
+        "text": "本地热映"
+      },
+      {
+        "pagePath": "pages/comingsoon/comingsoon",
+        "text": "即将上映"
+      },
+      {
+        "pagePath": "pages/moviesearch/moviesearch",
+        "text": "电影查询"
+      }
+    ]
+  }
+}

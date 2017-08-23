@@ -1,0 +1,48 @@
+/* hotplay.wxss */
+page{
+  height: 100%;
+  background-image: url(../../image/bj1.jpg);
+}
+
+.movie{
+  display: block;
+  display: flex;
+  margin-bottom: 10rpx;
+  margin-top: 10rpx;
+  border-bottom: 1rpx black solid;
+}
+
+.imgs{
+  height: 300rpx;
+  width: 150rpx;
+}
+
+.left{
+  margin-right: 40rpx;
+}
+
+.moviename{
+  margin-bottom: 10rpx; 
+  
+}
+
+.moviedirectors{
+  margin-bottom: 10rpx; 
+}
+
+.moviecasts{
+  margin-bottom: 10rpx; 
+}
+
+.moviegenres{
+  margin-bottom: 10rpx; 
+}
+
+.movieyear{
+  margin-bottom: 10rpx; 
+}
+
+.wenzizi{
+  font-size: 30rpx;
+  color: #888888;
+}

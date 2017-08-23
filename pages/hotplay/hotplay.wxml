@@ -1,0 +1,49 @@
+<!--hotplay.wxml-->
+<block wx:for="{{movies}}" wx:for-item="movie">
+
+  <view class="movie" id="{{movie.id}}" bindtap="jumptodetail">
+    <view class="left">
+      <image src="{{movie.images.medium}}" class="imgs"></image>
+    </view>
+
+    <view class="right">
+      
+
+      <view class="moviename">
+        片名: {{movie.title}}
+      </view>
+
+      <view class="moviedirectors">
+        导演: 
+        <block wx:for="{{movie.directors}}" wx:for-item="director" >
+          {{director.name}}
+        </block>
+        
+      </view>
+
+      <view class="moviecasts">
+        主演: 
+        <block wx:for="{{movie.casts}}" wx:for-item="cast">
+          {{cast.name}}
+        </block>
+        
+      </view>
+
+      <view class="moviegenres">
+        类型: 
+        <block wx:for="{{movie.genres}}" wx:for-item="genre">
+          {{genre}}
+        </block>
+
+        <view class="movieyear">
+        年份: {{movie.year}}
+        </view>
+        
+      </view>
+
+    </view>
+
+
+  </view>
+
+</block>

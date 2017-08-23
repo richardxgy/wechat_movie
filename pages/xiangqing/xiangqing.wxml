@@ -1,0 +1,60 @@
+<!--xiangqing.wxml-->
+
+
+  <view class="movie" id="{{movie.id}}" bindtap="jumptodetail">
+    <view class="left">
+      <image src="{{images}}" class="imgs"></image>
+    </view>
+
+    <view class="right">
+      <view class="moviename">
+        片名: {{moviename}}
+      </view>
+
+      <view class="moviedirectors">
+        导演: 
+        <block wx:for="{{moviedirectors}}" wx:for-item="director" >
+          {{director.name}}
+        </block>
+        
+      </view>
+
+      <view class="moviecasts">
+        主演: 
+        <block wx:for="{{moviecasts}}" wx:for-item="cast">
+          {{cast.name}}
+        </block>
+        
+      </view>
+
+      <view class="moviegenres">
+        类型: 
+        <block wx:for="{{moviegenres}}" wx:for-item="genre">
+          {{genre}}
+        </block>
+
+        <view class="movieyear">
+        上映年份: {{movieyear}}
+        </view>
+
+        <view class="moviecountries" wx:for="{{countries}}" wx:for-item="countrie">
+        上映地区: {{countrie}}
+        </view>
+        
+      </view>
+
+    </view>
+      <!--演员的照片  -->
+    <view class="castimage">
+      <image src="{{castimage.avatars.medium}}" wx:for="{{castimages}}" wx:for-item="castimage" class="imgss"></image>
+
+    </view>
+
+    <!--电影介绍  -->
+      <view class="moviesummary">
+      {{summary}}
+      </view>
+
+  </view>
+
+
